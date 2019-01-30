@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<title>DRACORE</title>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+    <!-- Material design -->
+     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Material design -->
+
+  	<!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <link href="css/perfect-scrollbar.css" rel="stylesheet">    
+    <link href = "css/calendar.css" rel = "stylesheet">  
+    <link href = "css/datepicker.css" rel = "stylesheet">  
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/1.4.3/css/scroller.dataTables.min.css">
+
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+  <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/lms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper-in">
+			<header>
+				<div class="header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 clearfix">
+								<div class="logo pull-left">
+									<a href="javascript:void(0)"></a>
+								</div> <!-- /.logo -->
+								<div class="user-info pull-right">
+									<div class = "dropdown">   
+									   	<button type = "button" class = "btn dropdown-toggle" id = "dropdownMenu1" data-toggle = "dropdown">
+									   	  <span class="user-name">
+									   	  	Welcome to Admin
+									   	  </span> <!-- /.user-name -->
+									      <span class="user-img">
+									      	<img src="" alt="">
+									      </span> <!-- /.user-img -->
+									      <span class = "caret"></span>
+									   	</button>
+									   
+									   	<ul class = "dropdown-menu" role = "menu" aria-labelledby = "dropdownMenu1">
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Java</a>
+									      	</li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Data Mining</a>
+									      	</li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">
+									            	Data Communication/Networking
+									         	</a>
+									      	</li>
+									      
+									      	<li role = "presentation" class = "divider"></li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Separated link</a>
+									      	</li>
+									   </ul>
+									</div> <!-- /.dropdown -->      
+								</div> <!-- /.user-info -->
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.header-top -->			
+				<div class="nav-menu">
+					<div class="container">
+						<div class="row"> <!-- row -->
+							<div class=""> <!-- col-md-12 col-sm-12 -->
+								<nav class = "navbar navbar-default" role = "navigation">   
+								   	<div class = "navbar-header">
+								      <button type = "button" class = "navbar-toggle" 
+								         data-toggle = "collapse" data-target = "#example-navbar-collapse">
+								         <span class = "sr-only">Toggle navigation</span>
+								         <span class = "icon-bar"></span>
+								         <span class = "icon-bar"></span>
+								         <span class = "icon-bar"></span>
+								      </button>
+								   	</div>							   
+								   	<div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+									
+								      <ul class = "nav navbar-nav">
+								         <li><a href = "dashboard.html">Dashboard</a></li>
+								         <li class = "active"><a href = "leads.html">Leads</a></li>
+								         <li><a href = "manager.html">Manager</a></li>
+								         <li><a href = "sales.html">Sales Channel</a></li>
+								         <li><a href = "advisers.html">Advisers</a></li>
+								         <li><a href = "rules-lead-assign.html">Rules</a></li>
+								         <li><a href = "reports.html">Reports</a></li>
+								      </ul>
+									</div>								   
+								</nav>
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.nav-menu -->
+			</header>
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 col-sm-12 clearfix">
+						<div class="top-links">
+							<ul>
+								<li class="active"><a href="lead-assign.html">Lead Assign</a></li><li><a href="lead-status.html">Lead Status (Pipeline)</a></li>
+							</ul>
+						</div> <!-- /.top-links -->
+						<div class="lead-container mb15">
+							<div class="row clearfix ">
+								<div class="col-md-3 col-sm-3">
+									<label class="text-label">Assign New Leads</label>
+								</div> <!-- /.col-md-3 -->
+								<div class="col-md-9 col-sm-9">
+									<div class="radio checkbox-inline mr30">
+                                    	<input type="radio" id="auto" name="new-leads" value="auto"   class="select-check">
+	                                    <label  for="auto">
+	                                       <span></span> Auto Assign
+	                                    </label>
+                              		</div>
+									<div class="radio checkbox-inline">
+                                    	<input type="radio" id="manual" name="new-leads" value="manual" class="select-check">
+	                                    <label  for="manual">
+	                                       <span></span> Manual Assign
+	                                    </label>
+                              		</div>
+								</div> <!-- /.col-md-9 -->
+							</div> <!-- /.row -->
+
+							<!-- <div class="row clearfix">
+						<div class="col-md-12 col-sm-12"> -->
+							
+						<!--</div>  /.col-md-12 
+					</div>  /.row -->
+							
+							<!-- <div class="text-right mt150">
+								<button type="button" class="btn btn-primary mr15">Cancel</button>
+								<button type="button" class="btn btn-primary">Set</button>
+							</div> -->
+						</div> <!-- /.lead-container -->
+						<div class="select-base" id="select_base">
+								<div class="radio checkbox-inline mr30">
+                                    	<input type="radio" id="round_robin" name="basis" value="round_robin" class="select-round">
+	                                    <label  for="round_robin">
+	                                       <span></span> Round Robin Basis 
+	                                    </label>
+                          		</div>
+								<div class="radio checkbox-inline mr30 m-left0">
+                                	<input type="radio" id="ranking" name="basis" value="ranking" class="select-round">
+                                    <label  for="ranking">
+                                       <span></span> Ranking Basis
+                                    </label>
+                          		</div>
+                          		<button type="button" class="btn btn-default" id="apply_btn">Apply</button>
+						</div>	<!-- /.select-base -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+
+				<div class="container">
+				<div class="clearfix">
+				<div class="col-md-12 col-sm-12 clearfix">
+				<div class="col-md-1 col-sm-2 pull-right p-right0 mb3 clearfix" id="default_lead_display"> <!-- mb15 -->
+					<a href="javascript:void(0)"  class="btn btn-default pull-right columnFilter">Display</a>
+					<div class="select-column">
+						<ul class="clearfix">
+							<li class="toggle-vis mark_all" data-column="0">Mark All</li>
+							<li><a class="toggle-vis" data-column="1">ID NO.</a></li>
+							<li><a class="toggle-vis" data-column="2">Name</a></li>
+							<li><a class="toggle-vis" data-column="3">Tags</a></li>
+							<li><a class="toggle-vis" data-column="4">Source</a></li>
+							<li><a class="toggle-vis" data-column="5">Email</a></li>
+							<!-- <li><a class="toggle-vis" data-column="6">Status</a></li> -->
+						</ul>
+					</div> <!-- /.select-column -->
+				</div> <!-- /.col-md-4 -->
+				<div class="col-md-3 col-sm-2 pull-right p-right0 mb3 clearfix" id="round_robin_display"> <!-- mb15 -->
+					<a href="javascript:void(0)"  class="btn btn-default pull-right columnFilter">Display</a>
+					<div class="select-column">
+						<ul class="clearfix">
+							<!-- <li><a class="toggle-vis" data-column="0">Mark All</a></li> -->
+							<li><a class="toggle-vis" data-column="0">ID NO.</a></li>
+							<li><a class="toggle-vis" data-column="1">Name</a></li>
+							<li><a class="toggle-vis" data-column="2">Tags</a></li>
+							<li><a class="toggle-vis" data-column="3">Source</a></li>
+							<li><a class="toggle-vis" data-column="4">Sort by Adviser</a></li>
+							<!-- <li><a class="toggle-vis" data-column="6">Status</a></li> -->
+						</ul>
+					</div> <!-- /.select-column -->
+				</div> <!-- /.col-md-4 -->
+				<div class="col-md-3 col-sm-2 pull-right p-right0 mb3 clearfix" id="ranking_display"> <!-- mb15 -->
+					<a href="javascript:void(0)"  class="btn btn-default pull-right columnFilter">Display</a>
+					<div class="select-column">
+						<ul class="clearfix">
+							<!-- <li><a class="toggle-vis" data-column="0">Mark All</a></li> -->
+							<li><a class="toggle-vis" data-column="0">ID NO.</a></li>
+							<li><a class="toggle-vis" data-column="1">Name</a></li>
+							<li><a class="toggle-vis" data-column="2">Tags</a></li>
+							<li><a class="toggle-vis" data-column="3">Source</a></li>
+							<li><a class="toggle-vis" data-column="4">Top Performing Adviser</a></li>
+							<!-- <li><a class="toggle-vis" data-column="6">Status</a></li> -->
+						</ul>
+					</div> <!-- /.select-column -->
+				</div> <!-- /.col-md-4 -->
+				<div class="adviser-dropdown-container" id="adviser_dropdown">					
+					<div class="col-md-2 col-sm-3 pull-right pos-relative">					
+								<div class="custom-select catagory-dropdown ">
+	                              	<select name="" class="turnintodropdown  adviser-dropdown">
+		                                <option value="1">Adviser</option>
+		                                <option value="2">Aligned Adviser</option>
+		                                <option value="3">Independent Adviser</option>
+		                                <option value="4">Other Adviser</option>
+	                              	</select>
+		                        </div> <!-- /.custom-select -->	
+							</div> <!-- /.col-md-2 -->
+	                            <div class="select-person">
+	                            	<a href="javascript:void(0)" class="close_btn"><i class="fa fa-times" aria-hidden="true"></i></a>
+	                            	<div class="row clearfix">
+	                            		<div class="col-md-4 col-sm-4">
+	                            			<div class="form-group ui-widget">
+	                            				<input type="text" class="form-control" placeholder="Search by Name" id="name">
+	                            			</div> <!-- /.form-group -->
+	                            		</div> <!-- /.col-md-4 -->
+	                            		<div class="col-md-4 col-sm-4">
+	                            			<div class="form-group">
+	                            				<input type="text" class="form-control" placeholder="Search by Region" id="region">
+	                            			</div> <!-- /.form-group -->
+	                            		</div> <!-- /.col-md-4 -->
+	                            		<div class="col-md-4 col-sm-4">
+	                            			<div class = "input-group ui-widget">
+										        <input type = "text" class = "form-control" placeholder="Search by Tags" id="tags">
+										        <span class = "input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+										    </div> <!-- /.input-group -->
+	                            		</div> <!-- /.col-md-4 -->
+	                            	</div> <!-- /.row -->
+	                            	<div class="person-container" id="container">
+	                            		<ul class="clearfix">
+	                            			<li>
+	                            				<div class="radio checkbox-inline mr30">
+				                                	<input type="checkbox" id="catherina" name="person" value="catherina" class="person-profile" >
+				                                    <label  for="catherina">
+				                                       <span></span> Catherina Bribiesca
+				                                    </label>
+				                          		</div>
+	                            			</li>
+	                            			<li>
+	                            				<div class="radio checkbox-inline mr30">
+				                                	<input type="checkbox" id="catherina" name="person" value="catherina" class="person-profile" >
+				                                    <label  for="catherina">
+				                                       <span></span> Catherina Bribiesca
+				                                    </label>
+				                          		</div>
+	                            			</li>
+	                            			<li>
+	                            				<div class="radio checkbox-inline mr30">
+				                                	<input type="checkbox" id="catherina" name="person" value="catherina" class="person-profile" >
+				                                    <label  for="catherina">
+				                                       <span></span> Catherina Bribiesca
+				                                    </label>
+				                          		</div>
+	                            			</li>
+	                            			<li>
+	                            				<div class="radio checkbox-inline mr30">
+				                                	<input type="checkbox" id="catherina" name="person" value="catherina" class="person-profile" >
+				                                    <label  for="catherina">
+				                                       <span></span> Catherina Bribiesca
+				                                    </label>
+				                          		</div>
+	                            			</li>
+	                            			<li>
+	                            				<div class="radio checkbox-inline mr30">
+				                                	<input type="checkbox" id="catherina" name="person" value="catherina" class="person-profile" >
+				                                    <label  for="catherina">
+				                                       <span></span> Catherina Bribiesca
+				                                    </label>
+				                          		</div>
+	                            			</li>
+	                            			<li>
+	                            				<div class="radio checkbox-inline mr30">
+				                                	<input type="checkbox" id="catherina" name="person" value="catherina" class="person-profile" >
+				                                    <label  for="catherina">
+				                                       <span></span> Catherina Bribiesca
+				                                    </label>
+				                          		</div>
+	                            			</li>
+	                            			<li>
+	                            				<div class="radio checkbox-inline mr30">
+				                                	<input type="checkbox" id="catherina" name="person" value="catherina" class="person-profile" >
+				                                    <label  for="catherina">
+				                                       <span></span> Catherina Bribiesca
+				                                    </label>
+				                          		</div>
+	                            			</li>
+	                            			<li>
+	                            				<div class="radio checkbox-inline mr30">
+				                                	<input type="checkbox" id="catherina" name="person" value="catherina" class="person-profile" >
+				                                    <label  for="catherina">
+				                                       <span></span> Catherina Bribiesca
+				                                    </label>
+				                          		</div>
+	                            			</li>
+	                            		</ul>
+		                            </div> <!-- /.person-container -->
+		                            <div class="text-center mt15">
+		                            	<button type="button" class="btn btn-primary mr15">Cancel</button>
+		                            	<button type="button" class="btn btn-primary">Send</button>
+		                            </div> <!-- /.text-center -->
+	                            </div> <!-- /.select-person -->
+					
+				</div> <!-- /.adviser-dropdown-container -->
+				
+				</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+				</div> <!-- /.container -->
+				<div class="default-leads  lead-container no-padding" id="default_leads">
+					<table id="example3" class="display nowrap table">
+						<colgroup>
+							<col style="width: 10%;">
+							<col style="width: 18%;">
+							<col style="width: 18%;">
+							<col style="width: 18%;">
+							<col style="width: 18%;">
+							<col style="width: 18%;">
+						</colgroup>
+				        <thead>
+				            <tr>
+				                <th>Mark All</th>
+				                <th>ID NO.</th>
+				                <th>Name</th>
+				                <th>Tags</th>
+				                <th>Source</th>
+				                <th>Email</th>
+				            </tr>
+				        </thead>
+				        <tbody>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads" name="default-leads" value="leads" class="select_adviser_list">
+	                                    <label  for="leads">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads1" name="default-leads" value="leads1" class="select_adviser_list">
+	                                    <label  for="leads1">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads2" name="default-leads" value="leads2" class="select_adviser_list">
+	                                    <label  for="leads2">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads3" name="default-leads" value="leads3" class="select_adviser_list">
+	                                    <label  for="leads3">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads4" name="default-leads" value="leads4" class="select_adviser_list">
+	                                    <label  for="leads4">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads5" name="default-leads" value="leads5" class="select_adviser_list">
+	                                    <label  for="leads5">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads6" name="default-leads" value="leads6" class="select_adviser_list">
+	                                    <label  for="leads6">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads7" name="default-leads" value="leads7" class="select_adviser_list">
+	                                    <label  for="leads7">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads8" name="default-leads" value="leads8" class="select_adviser_list">
+	                                    <label  for="leads8">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads9" name="default-leads" value="leads9" class="select_adviser_list">
+	                                    <label  for="leads9">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads10" name="default-leads" value="leads10" class="select_adviser_list">
+	                                    <label  for="leads10">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads11" name="default-leads" value="leads11" class="select_adviser_list">
+	                                    <label  for="leads11">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        	<tr>
+								<td class="text-center">
+				        			<div class="radio checkbox-inline">
+                                    	<input type="checkbox" id="leads11" name="default-leads" value="leads11" class="select_adviser_list">
+	                                    <label  for="leads11">
+	                                       <span class="m-right0"></span> 
+	                                    </label>
+                              		</div>
+				        		</td>
+				        		<td><a href="leads-profile.html">8906280377086</a></td>
+				        		<td>Daryl Fraser</td>
+				        		<td>Life, Short, Health</td>
+				        		<td>Dracore</td>
+				        		<td>Dary123@gmail.com</td>
+				        	</tr>
+				        </tbody>
+						
+					</table>
+				</div> <!-- /.default -->
+					
+					<!-- <div id="auto-select">	 -->		
+					<div class="row clearfix">
+						<div class="col-md-12 col-sm-12">							
+							<div id="round_robbin_container">
+							<div class="lead-container no-padding">
+								<table id="example4" class="display nowrap table">
+									<colgroup>
+										<!-- <col style="width: 10%;"> -->
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+									</colgroup>
+							        <thead>
+							            <tr>
+							                <!-- <th>Mark All</th> -->
+							                <th>ID NO.</th>
+							                <th>Name</th>
+							                <th>Tags</th>
+							                <th>Source</th>
+							                <th>Sort by Adviser</th>
+							            </tr>
+							        </thead>
+							        <tbody>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 2</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 2</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 3</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 3</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 4</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 4</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 5</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 5</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 6</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 6</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 7</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 7</td>
+							        	</tr>
+							        </tbody>
+							    </table>
+							</div> <!-- /.lead-container -->
+							</div> <!-- /#round_robbin_container -->
+							<div id="ranking-container">
+							<div class="lead-container  no-padding">
+								<table id="example5" class="display nowrap table">
+									<colgroup>
+										<!-- <col style="width: 10%;"> -->
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+									</colgroup>
+									<thead>
+							            <tr>
+							                <th>ID NO.</th>
+							                <th>Name</th>
+							                <th>Tags</th>
+							                <th>Source</th>
+							                <th>Top Performing Advisers</th>
+							            </tr>										
+									</thead>
+									<tbody>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 2</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 2</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 2</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 2</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 3</td>											
+										</tr>
+										<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 3</td>											
+										</tr>
+									</tbody>
+								</table>
+							</div> <!-- /.lead-container -->
+							</div> <!-- /#ranking-container -->
+						</div> <!-- /.col-md-12 -->
+					</div> <!-- /.row -->
+				<!--</div>  /#auto-select -->
+				<div id="manual-select">			
+					<div class="row clearfix">
+						<div class="col-md-12 col-sm-12 clearfix">
+							
+							<!--<div class="lead-container no-padding">
+								<table id="example1" class="display nowrap table">
+									<colgroup>
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+										<col style="width: 20%;">
+									</colgroup>
+							        <thead>
+							            <tr>
+							                <th>ID NO.</th>
+							                <th>Name</th>
+							                <th>Tags</th>
+							                <th>Source</th>
+							                <th>Source By Adviser</th>
+							            </tr>
+							        </thead>
+							        <tbody>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        	<tr>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short, Health</td>
+							        		<td>Dracore</td>
+							        		<td>Adviser 1</td>
+							        	</tr>
+							        </tbody>
+							    </table>
+							</div>  /.lead-container -->
+						</div> <!-- /.col-md-12 -->
+					</div> <!-- /.row -->					
+				</div> <!-- /#manual-select -->
+				<!-- <div class="row clearfix">
+					<div class="col-md-12 col-sm-12">
+						<div class="lead-indicator">
+					
+						</div>  /.lead-indicator 
+					</div>
+				</div> /.row -->
+			</div> <!-- /.container -->	
+		</div> <!-- /.wrapper-in -->
+		<footer>
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 col-sm-12">						
+						<p>Copyright@2017</p>					
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->	
+		</footer>
+	</div> <!-- /.wrapper -->
+
+
+	
+
+ 	 <!-- jQuery  -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript  -->
+    <script src="js/bootstrap.min.js"></script> 
+    <!--<script src = "js/bootstrap-datepicker.js"></script> -->
+    <!-- graph 
+	<script src="js/Chart.js"></script>
+	<script src="js/Chart.bundle.js"></script>
+	<script src="js/custom-charts.js"></script>-->    
+	<!-- scrollbar-->
+	<script src="js/perfect-scrollbar.js"></script> 
+	<!-- caleder 
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>-->
+    <!-- datatable -->
+    <!-- <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/scroller/1.4.3/js/dataTables.scroller.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript">
+		var ps = new PerfectScrollbar('#container');	
+		$(document).ready(function() {
+		    /*$('#example,#example1,#example2').DataTable( {
+		        serverSide: true,
+		        ordering: true,
+		        searching: false,
+		        ajax: function ( data, callback, settings ) {
+		            var out = [];
+		 
+		            for ( var i=data.start, ien=data.start+data.length ; i<ien ; i++ ) {
+		                out.push( [ i+'-1', i+'-2', i+'-3', i+'-4', i+'-5', i+'-6' ] );
+		            }
+		 
+		            /*setTimeout( function () {
+		                callback( {
+		                    draw: data.draw,
+		                    data: out,
+		                    recordsTotal: 5000000,
+		                    recordsFiltered: 5000000
+		                } );
+		            }, 50 );
+		        },
+		        scrollY: $(window).height(),
+		        scroller: {
+		            loadingIndicator: true
+		        }
+		    });*/
+
+		    /* ************************************************* */
+		    	
+		    $(function(){
+		    	$("#manual-select,#auto-select").hide();
+		    	$(".select-check").on("click",function(){
+		    		if($(this).val() === "auto"){
+		    			$("#default_leads").show();
+		    			$("#select_base").show();
+		    		}
+		    		else if($(this).val() === "manual"){
+		    			$("#select_base").hide();
+		    			$("#ranking-container").hide();
+		    			$("#default_leads").show();
+		    		}
+		    	})
+		    });  	
+		    
+		    /* ************************************************* */
+
+		    $(function(){
+		    	$("#ranking-container,#round_robbin_container,#round_robin_display,#ranking_display").hide();
+		    	$("#apply_btn").on("click",function(){ 
+		    		var robin = $('input[name=basis]:checked').val();
+		    		//alert(robin);
+		    		if(robin === "round_robin"){
+		    			$("#default_leads").hide();
+		    			$("#ranking-container").hide();
+		    			$("#round_robbin_container").show();
+		    			$("#ranking_display").hide();
+		    			$("#default_lead_display").hide();
+		    			$("#round_robin_display").show();
+		    		}
+		    		else{
+		    			$("#default_leads").hide();
+		    			$("#round_robbin_container").hide();
+		    			$("#default_lead_display").hide();
+		    			$("#ranking-container").show();
+		    			$("#round_robin_display").hide();
+		    			$("#ranking_display").show();		    			
+		    		}
+		    	})
+		    });  	
+
+		     /*$("#default_leads .table tr td").on("click", function(){
+		     	//alert(11);
+		     	window.location='leads-profile.html'
+		     })*/
+		    /*****************************************************/
+
+		    
+		    $("#adviser_dropdown").hide();
+		    $(".select_adviser_list").on("click",function(){
+		    	var newAssign = $('input[name=new-leads]:checked').val();
+		    	if(newAssign === "manual"){
+		    		$("#adviser_dropdown").show();
+		    	}
+		    	else{
+		    		$("#adviser_dropdown").hide();
+		    	}
+		    	
+		    });
+		    $(".adviser-dropdown").on("change",function(){
+		    	var adv = $(".adviser-dropdown").val();
+		    	//alert(adv);
+		    	if(adv == 2){
+		    		$(".select-person").css("display","block");
+		    	}
+		    	else{
+		    		$(".select-person").css("display","none");
+		    	}
+		    })
+
+		    $(".close_btn").on("click",function(){
+		    	$(".select-person").hide();
+		    })
+
+		    /*$(".person-profile").on("click",function(){
+		    	//document.location.href='leads-profile.html'
+		    })*/
+
+		    /*******************************************************/
+		    /*var availableTags = [
+		      "ActionScript",
+		      "AppleScript",
+		      "Asp",
+		      "BASIC",
+		      "C",
+		      "C++",
+		      "Clojure",
+		      "COBOL",
+		      "ColdFusion",
+		      "Erlang",
+		      "Fortran",
+		      "Groovy",
+		      "Haskell",
+		      "Java",
+		      "JavaScript",
+		      "Lisp",
+		      "Perl",
+		      "PHP",
+		      "Python",
+		      "Ruby",
+		      "Scala",
+		      "Scheme"
+		    ];
+		    $("#tags").autocomplete({
+		      source: availableTags
+		    });*/
+		});      
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

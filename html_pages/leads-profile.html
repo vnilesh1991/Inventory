@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<title>DRACORE</title>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+    <!-- Material design -->
+     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Material design -->
+    <link href="css/perfect-scrollbar.css" rel="stylesheet">    
+    <link href = "css/calendar.css" rel = "stylesheet">  
+    <link href = "css/datepicker.css" rel = "stylesheet">  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/lms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper-in">
+			<header>
+				<div class="header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 clearfix">
+								<div class="logo pull-left">
+									<a href="javascript:void(0)"></a>
+								</div> <!-- /.logo -->
+								<div class="user-info pull-right">
+									<div class = "dropdown">   
+									   	<button type = "button" class = "btn dropdown-toggle" id = "dropdownMenu1" data-toggle = "dropdown">
+									   	  <span class="user-name">
+									   	  	Welcome to Admin
+									   	  </span> <!-- /.user-name -->
+									      <span class="user-img">
+									      	<img src="" alt="">
+									      </span> <!-- /.user-img -->
+									      <span class = "caret"></span>
+									   	</button>
+									   
+									   	<ul class = "dropdown-menu" role = "menu" aria-labelledby = "dropdownMenu1">
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Java</a>
+									      	</li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Data Mining</a>
+									      	</li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">
+									            	Data Communication/Networking
+									         	</a>
+									      	</li>
+									      
+									      	<li role = "presentation" class = "divider"></li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Separated link</a>
+									      	</li>
+									   </ul>
+									</div> <!-- /.dropdown -->      
+								</div> <!-- /.user-info -->
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.header-top -->			
+				<div class="nav-menu">
+					<div class="container">
+						<div class="row"> <!-- row -->
+							<div class=""> <!-- col-md-12 col-sm-12 -->
+								<nav class = "navbar navbar-default" role = "navigation">   
+								   	<div class = "navbar-header">
+								      <button type = "button" class = "navbar-toggle" 
+								         data-toggle = "collapse" data-target = "#example-navbar-collapse">
+								         <span class = "sr-only">Toggle navigation</span>
+								         <span class = "icon-bar"></span>
+								         <span class = "icon-bar"></span>
+								         <span class = "icon-bar"></span>
+								      </button>
+								   	</div>							   
+								   	<div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+									
+								      <ul class = "nav navbar-nav">
+								         <li><a href = "dashboard.html">Dashboard</a></li>
+								         <li class = "active"><a href = "leads.html">Leads</a></li>
+								         <li><a href = "manager.html">Manager</a></li>
+								         <li><a href = "sales.html">Sales Channel</a></li>
+								         <li><a href = "advisers.html">Advisers</a></li>
+								         <li><a href = "rules-lead-assign.html">Rules</a></li>
+								         <li><a href = "reports.html">Reports</a></li>
+								      </ul>
+									</div>								   
+								</nav>
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.nav-menu -->
+			</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 clearfix profile-tabs">
+						<div class="top-panel mb0 clearfix">
+							<!-- <h1 class="pull-left">Add Manager</h1> -->
+							<ul id = "myTab" class = "nav nav-tabs pull-left">
+							   	<li class = "active">
+							      	<a href = "#profile" data-toggle = "tab">
+							         	Customer Profile
+							      	</a>
+							   	</li>						   
+						   		<li><a href = "#status" data-toggle = "tab">Customer Status</a></li>
+						   </ul>
+	
+							<div class="back-link pull-right mt15">
+								<a href="lead-assign.html">Back</a>
+							</div> <!-- /.back-link -->
+						</div> <!-- /.top-panel -->
+						<div class="profile-details">							
+							<div id = "myTabContent" class = "tab-content">
+								<div class = "tab-pane fade in active clearfix" id = "profile">
+									<div class="col-md-12 col-sm-12 no-padding">
+										<div class="lead-container clearfix">
+											<div class="col-md-3 col-sm-3">
+												<img src="images/profile-img.jpg" alt="Profile image">
+											</div> <!-- /.col-md-3 -->
+											<div class="col-md-9 col-sm-9 p-left0">
+												<div class="detail-info-top clearfix">
+													<p class="col-md-3 p-left0 pull-left">Personal Details</p>
+													<p class="col-md-6 pull-right">
+														<span>ID No.</span>
+														<span>8906280377086</span>
+													</p>
+												</div> <!-- /.detail-info-top -->
+												<div class="detail-info-bottom">
+													<div class="col-md-6 col-sm-6 p-left0">
+														<ul class="clearfix">
+															<li>
+																<span>Name : </span>
+																<span>Glenn Bryce Borthwick</span>
+															</li>
+															<li>
+																<span>Age : </span>
+																<span>42</span>
+															</li>
+															<li>
+																<span>Marriage status : </span>
+																<span>Married</span>
+															</li>
+															<li>
+																<span>Spouse Name : </span>
+																<span>Ethel</span>
+															</li>
+															<li>
+																<span>Number of Children :</span>
+																<span>3</span>
+															</li>
+															<li>
+																<span>Ages : </span>
+																<span>3, 7 , 14</span>
+															</li>
+														</ul>
+													</div> <!-- /.col-md-6 -->
+													<div class="col-md-6 col-sm-6">
+														<ul class="clearfix">
+															<li>
+																<span>Address : </span>
+																<span>13 Swallow avenue</span>
+															</li>
+															<li>
+																<span>Ownership : </span>
+																<span>Owner</span>
+															</li>
+															<li>
+																<span>Number of years :</span>
+																<span>5</span>
+															</li>
+															<li>
+																<span>Previous ownership :</span>
+																<span>Yes</span>
+															</li>
+															<li>
+																<span>Cell 1 : </span>
+																<span>6565656565656</span>
+															</li>
+															<li>
+																<span>Home 1 : </span>
+																<span>20202 565656 56</span>
+															</li>
+														</ul>
+													</div> <!-- /.col-md-6 -->
+												</div> <!-- /.detail-info-bottom -->
+											</div> <!-- /.col-md-9 -->
+										</div> <!-- /.lead-container -->
+									</div> <!-- /.col-md-12 -->
+									<div class="col-md-8 col-sm-8 p-left0">
+										<div class="lead-container no-padding height310">
+											<div class="person-info-top clearfix">
+												<div class="col-md-4 col-sm-4">
+													<p>Tags</p>
+													<ul class="clearfix">
+														<li>Education Plan</li>
+														<li>Life cover</li>
+													</ul>
+												</div> <!-- /.col-md-4 -->
+												<div class="col-md-4 col-sm-4">
+													<p>Insights / Needs</p>
+													<ul class="clearfix">
+														<li>Life cover</li>
+														<li>Family Wellbeing</li>
+														<li>Bond payments</li>
+													</ul>
+													<button type="button" class="btn btn-secondary">
+														<span><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></span>Import Insight List
+													</button>
+												</div> <!-- /.col-md-4 -->
+												<div class="col-md-4 col-sm-4">
+													<p>Employment</p>
+													<ul class="clearfix">
+														<li class="mb0">
+															<span>Employed : </span>
+															<span>Yes</span>
+														</li>
+														<li class="mb0">
+															<span>Est Income : </span>
+															<span>R30000pm</span>
+														</li>
+														<li class="mb0">
+															<span>Position : </span>
+															<span>Manager</span>
+														</li>
+														<li class="mb0">
+															<span>Work No. : </span>
+															<span>2502365987</span>
+														</li>
+													</ul>
+												</div> <!-- /.col-md-4 -->
+											</div> <!-- /.person-info-top -->
+											<div class="person-info-bottom clearfix">
+												<div class="col-md-4 col-sm-4">
+													<p>LSM / Lifestage</p>
+													<ul class="clearfix">
+														<li>9</li>
+														<li>Married with children</li>
+													</ul>
+												</div> <!-- /.col-md-4 -->
+												<div class="col-md-4 col-sm-4">
+													<p>Lead status</p>
+													<ul class="clearfix">
+														<li>Hot</li>
+													</ul>
+												</div> <!-- /.col-md-4 -->
+												<div class="col-md-4 col-sm-4"></div> <!-- /.col-md-4 -->
+											</div> <!-- /.person-info-bottom -->
+										</div> <!-- /.lead-container -->
+									</div> <!-- /.col-md-8 -->
+									<div class="col-md-4 col-sm-4 p-right0">
+										<div class="lead-container no-padding activity-container height310">
+											<h5>Activity</h5>
+											<div class="meeting-details">
+												<p>Meeting set up for 1st November @ 2pm</p>
+												<p>Next meeting scheduled for 15 Nov. @ 2pm</p>
+												<p>Prepare quote</p>
+												<div class="status-box">
+													<p>Completed</p>
+													<ul class="clearfix">
+														<li><a href="#"><span><i class="fa fa-check" aria-hidden="true"></i></span>Yes</a></li><li><a href="#"><span><i class="fa fa-times" aria-hidden="true"></i></span>No</a></li>
+													</ul>
+												</div> <!-- /.status-box -->
+											</div> <!-- /.meeting-details -->
+										</div> <!-- /.lead-container -->
+									</div> <!-- /.col-md-4 -->
+							    </div> <!-- /.tab-pane#profile -->
+							    <div class = "tab-pane fade" id = "status">
+								    <div class="lead-container p30">
+								    	<label>New Note / Message / Create Task</label>
+								    	<div class="lead-indicator">
+								    		<textarea class="form-control"></textarea>
+								    	</div> <!-- /.lead-indicator -->
+								    	<div class="text-right">
+								    		<button type="button" class="btn btn-primary mr15">Cancel</button>
+											<button type="button" class="btn btn-primary">Update</button>
+								    	</div>
+								    </div> <!-- /.lead-container -->
+								    <div class="lead-container p30">
+								    	<div class="change-status">
+								    		<label>Change Status or Stage</label>
+								    		<div class="select-stages">
+								    			<ul class="clearfix">
+								    				<li>
+								    					<div class="radio checkbox-inline">
+					                                    	<input type="radio" id="untouchedContact" name="stages" value="untouchedContact"  class="select-check">
+						                                    <label  for="untouchedContact">
+						                                       <span></span> Untouched Contact
+						                                    </label>
+					                              		</div>
+								    				</li><li>
+								    					<div class="radio checkbox-inline">
+					                                    	<input type="radio" id="contactMade" name="stages" value="contactMade"  class="select-check">
+						                                    <label  for="contactMade">
+						                                       <span></span> Contact Made
+						                                    </label>
+					                              		</div>
+								    				</li><li>
+								    					<div class="radio checkbox-inline">
+					                                    	<input type="radio" id="qualified" name="stages" value="qualified"  class="select-check">
+						                                    <label  for="qualified">
+						                                       <span></span> Qualified
+						                                    </label>
+					                              		</div>
+								    				</li><li>
+								    					<div class="radio checkbox-inline">
+					                                    	<input type="radio" id="proposalPresented" name="stages" value="proposalPresented"  class="select-check">
+						                                    <label  for="proposalPresented">
+						                                       <span></span> Proposal Presented
+						                                    </label>
+					                              		</div>
+								    				</li><li>
+								    					<div class="radio checkbox-inline">
+					                                    	<input type="radio" id="negotiation" name="stages" value="negotiation"  class="select-check">
+						                                    <label  for="negotiation">
+						                                       <span></span> In Negotiation
+						                                    </label>
+					                              		</div>
+								    				</li>
+								    			</ul>
+								    		</div> <!-- /.select-stages -->
+								    		<div class="text-right">
+								    			<button type="button" class="btn btn-primary mr15">Cancel</button>
+												<button type="button" class="btn btn-primary">Update</button>
+								    		</div>
+								    	</div> <!-- /.change-status -->
+								    </div> <!-- /.lead-container -->
+							    </div> <!-- /.tab-pane#status -->
+							</div> <!-- /.tab-content -->
+							
+							
+							
+							
+							
+							
+							<!--<div class="row clearfix mt50 mb20">
+								<div class="col-md-12 col-sm-12 text-center">
+									<button type="button" class="btn btn-primary mr15">Cancel</button>
+									<button type="button" class="btn btn-primary">Submit</button>
+								</div>  /.col-md-12 
+							</div>  /.row -->
+						</div> <!-- /.profile-details -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->				
+				<!-- <div class="row clearfix">
+					<div class="col-md-12 col-sm-12">
+						<div class="lead-indicator">
+					
+						</div>  /.lead-indicator 
+					</div>
+				</div> /.row -->
+			</div> <!-- /.container -->	
+		</div> <!-- /.wrapper-in -->
+		<footer>
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 col-sm-12">						
+						<p>Copyright@2017</p>					
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->	
+		</footer>
+	</div> <!-- /.wrapper -->
+
+
+	
+
+ 	<!-- jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src = "js/bootstrap-datepicker.js"></script>
+    <!-- graph  
+	<script src="js/Chart.js"></script>
+	<script src="js/Chart.bundle.js"></script>
+	<script src="js/custom-charts.js"></script>-->   
+	<!-- scrollbar 
+	<script src="js/perfect-scrollbar.js"></script>-->
+	<!-- caleder 
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>-->
+    <!-- filestyle -->
+    <script type="text/javascript" src="js/bootstrap-filestyle.js"></script>
+	<script type="text/javascript">
+		$(":file").filestyle({icon: false});	
+		/*var ps = new PerfectScrollbar('#container');
+		var ps1 = new PerfectScrollbar('#container1');
+		var ps2 = new PerfectScrollbar('#container2');
+
+		$("#startDate").datepicker({
+		});
+		var calendar = $("#calendar").calendar(
+                {
+                    //tmpl_path: "/tmpls/",
+                    events_source: function () { return []; }
+                });  */ 
+	</script>
+</body>
+</html>

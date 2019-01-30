@@ -1,0 +1,37 @@
+ <div ng-include="header.url"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="content-block">
+            <h1 class="section-title text-center">All Cars</h1><br>
+            <div class="table-container">
+                <table id="cartbl" class="display nowrap table">
+                  <thead>
+                    <tr>
+                      <th>Sr Number</th>
+                      <th>Manufactures</th>
+                      <th>Model</th>
+                      <th>Color</th>
+                      <th>Year</th>
+                      <th>Registration Number</th>
+                      <th>Notes</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr ng-repeat="cr in car.carlist track by $index" on-finish-render="callMyCustomMethod()">
+                      <td>{{$index+1}}</td>
+                      <td>{{cr.manufacturer}}</td>
+                      <td>{{cr.model}}</td>
+                      <td>{{cr.color}}</td>
+                      <td>{{cr.year}}</td>
+                      <td>{{cr.reg_no}}</td>
+                      <td>{{cr.notes}}</td>
+                    </tr>                        
+                  </tbody>
+                </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<div ng-include="footer.url"></div>

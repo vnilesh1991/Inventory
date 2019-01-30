@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<title>DRACORE</title>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+    <!-- Material design -->
+     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Material design -->
+    <link href="css/perfect-scrollbar.css" rel="stylesheet">    
+    <link href = "css/calendar.css" rel = "stylesheet">  
+    <!-- <link href = "css/datepicker.css" rel = "stylesheet">   -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/scroller/1.4.3/css/scroller.dataTables.min.css"> -->
+	<link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/lms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper-in">
+			<header>
+				<div class="header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 clearfix">
+								<div class="logo pull-left">
+									<a href="javascript:void(0)"></a>
+								</div> <!-- /.logo -->
+								<div class="user-info pull-right">
+									<div class = "dropdown">   
+									   	<button type = "button" class = "btn dropdown-toggle" id = "dropdownMenu1" data-toggle = "dropdown">
+									   	  <span class="user-name">
+									   	  	Welcome to Admin
+									   	  </span> <!-- /.user-name -->
+									      <span class="user-img">
+									      	<img src="" alt="">
+									      </span> <!-- /.user-img -->
+									      <span class = "caret"></span>
+									   	</button>
+									   
+									   	<ul class = "dropdown-menu" role = "menu" aria-labelledby = "dropdownMenu1">
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Java</a>
+									      	</li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Data Mining</a>
+									      	</li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">
+									            	Data Communication/Networking
+									         	</a>
+									      	</li>
+									      
+									      	<li role = "presentation" class = "divider"></li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Separated link</a>
+									      	</li>
+									   </ul>
+									</div> <!-- /.dropdown -->      
+								</div> <!-- /.user-info -->
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.header-top -->			
+				<div class="nav-menu">
+					<div class="container">
+						<div class="row"> <!-- row -->
+							<div class=""> <!-- col-md-12 col-sm-12 -->
+								<nav class = "navbar navbar-default" role = "navigation">   
+								   	<div class = "navbar-header">
+								      <button type = "button" class = "navbar-toggle" 
+								         data-toggle = "collapse" data-target = "#example-navbar-collapse">
+								         <span class = "sr-only">Toggle navigation</span>
+								         <span class = "icon-bar"></span>
+								         <span class = "icon-bar"></span>
+								         <span class = "icon-bar"></span>
+								      </button>
+								   	</div>							   
+								   	<div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+									
+								      <ul class = "nav navbar-nav">
+								         <li><a href = "dashboard.html">Dashboard</a></li>
+								         <li class = "active"><a href = "leads.html">Leads</a></li>
+								         <li><a href = "manager.html">Manager</a></li>
+								         <li><a href = "sales.html">Sales Channel</a></li>
+								         <li><a href = "advisers.html">Advisers</a></li>
+								         <li><a href = "rules-lead-assign.html">Rules</a></li>
+								         <li><a href = "reports.html">Reports</a></li>
+								      </ul>
+									</div>								   
+								</nav>
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.nav-menu -->
+			</header>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 clearfix">
+						<div class="top-links">
+							<ul class="clearfix">
+								<li><a href="lead-assign.html">Lead Assign</a></li>
+								<li><a href="lead-status.html">Lead Status (Pipeline)</a></li>
+							</ul>
+						</div> <!-- /.top-links -->
+						<div class="top-panel mb0 clearfix">
+							<div class="add-new pull-left">
+								<a href="add-new-lead.html"><span><i class="fa fa-plus" aria-hidden="true"></i></span>Add New Lead</a>
+								<a href="#"><span><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></span>Export Leads</a>
+								<a href="#"><span><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i></span>Import Insight List</a>
+							</div> <!-- /.add-new -->							
+							<div class="search-box pull-right clearfix width100">
+								<div class="col-md-2 col-sm-3 pull-right p-right0 clearfix">
+									<a href="javascript:void(0)"  class="btn btn-default pull-right columnFilter">Display</a>
+									<div class="select-column">
+										<ul class="clearfix">
+											<li class="toggle-vis mark_all" data-column="0">Checkbox</li>
+											<li><a class="toggle-vis" data-column="1">ID NO</a></li>
+											<li><a class="toggle-vis" data-column="2">Name</a></li>
+											<li><a class="toggle-vis" data-column="3">Tags</a></li>
+											<li><a class="toggle-vis" data-column="4">Source</a></li>
+											<li><a class="toggle-vis" data-column="5">Stage</a></li>
+											<li><a class="toggle-vis" data-column="6">Assign To</a></li>
+											<!-- <li><a class="toggle-vis" data-column="6">Assign To</a></li> -->
+											<li><a class="toggle-vis" data-column="7">Edited By</a></li>
+											<li><a class="toggle-vis" data-column="8">Status</a></li>
+											<li><a class="toggle-vis" data-column="9">SLA Alert</a></li>
+										</ul>
+									</div> <!-- /.select-column -->
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4 pull-right">
+									<div class = "input-group">
+								        <input type = "text" class = "form-control" placeholder="Search by Name or ID">
+								        <span class = "input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span>
+								    </div>
+								</div> <!-- /.col-md-2 -->
+								<div class="col-md-4 col-sm-4 pull-right">
+									<div class="custom-select catagory-dropdown">
+		                              	<select name="" class="turnintodropdown">
+			                                <option value="">Select By Stages</option>
+			                                <option value="">1</option>
+			                                <option value="">2</option>
+			                                <option value="">Other</option>
+		                              	</select>
+			                        </div> <!-- /.custom-select -->		
+								</div> <!-- /.col-md-2 -->
+							</div> <!-- /.search-box -->
+						</div> <!-- /.top-panel -->
+						<div class="lead-container no-padding">
+							<div>
+								<table id="example2" class="display nowrap table">
+									<colgroup>
+										<col style="width: 5%">
+										<col style="width: 12%">
+										<col style="width: 16%">
+										<col style="width: 13%">
+										<col style="width: 8%">
+										<col style="width: 15%">
+										<col style="width: 9%">
+										<col style="width: 9%">
+										<col style="width: 7%">
+										<col style="width: 7%">
+									</colgroup>
+							        <thead>
+							            <tr>
+							            	<th></th>
+							            	<th>ID NO</th>
+							                <th>Name</th>
+							                <th>Tags</th>
+							                <th>Source</th>
+							                <th>Stage</th>
+							                <th>Assign To</th>
+							                <th>Edited By</th>
+							                <th>Status</th>
+							                <th>SLA Alert</th>
+							                <!-- <th>Leads Assigned</th> -->
+							            </tr>
+							        </thead>
+							        <tbody>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads" name="new-leads" value="leads"  >
+				                                    <label  for="leads">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads1" name="new-leads" value="leads1"  >
+				                                    <label  for="leads1">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads2" name="new-leads" value="leads2"  >
+				                                    <label  for="leads2">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads3" name="new-leads" value="leads3"  >
+				                                    <label  for="leads3">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads4" name="new-leads" value="leads4"  >
+				                                    <label  for="leads4">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads5" name="new-leads" value="leads5"  >
+				                                    <label  for="leads5">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads6" name="new-leads" value="leads6"  >
+				                                    <label  for="leads6">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads7" name="new-leads" value="leads7"  >
+				                                    <label  for="leads7">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads8" name="new-leads" value="leads8"  >
+				                                    <label  for="leads8">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads9" name="new-leads" value="leads9"  >
+				                                    <label  for="leads9">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads10" name="new-leads" value="leads10"  >
+				                                    <label  for="leads10">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        	<tr>
+							        		<td class="text-center">
+							        			<div class="radio checkbox-inline">
+			                                    	<input type="checkbox" id="leads11" name="new-leads" value="leads11"  >
+				                                    <label  for="leads11">
+				                                       <span class="m-right0"></span> 
+				                                    </label>
+			                              		</div>
+							        		</td>
+							        		<td>8906280377086</td>
+							        		<td>Daryl Fraser</td>
+							        		<td>Life, Short,Health</td>
+							        		<td>Dracore</td>
+							        		<td>Meeting Scheduled</td>
+							        		<td>Adviser A</td>
+							        		<td>6 Dec. 2017</td>
+							        		<td>
+							        			<div class="status-check">
+							        				<ul class="clearfix">
+							        					<li><a href="javascript:void(0)"><i class="fa fa-check" aria-hidden="true"></i></a></li><li><a href="javascript:void(0)"><i class="fa fa-times" aria-hidden="true"></i></a></li>
+							        				</ul>
+							        			</div>
+							        		</td>
+							        		<td>2 Days</td>
+							        	</tr>
+							        </tbody>
+							    </table>
+							</div>
+						</div> <!-- /.lead-container -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->				
+				<!-- <div class="row clearfix">
+					<div class="col-md-12 col-sm-12">
+						<div class="lead-indicator">
+					
+						</div>  /.lead-indicator 
+					</div>
+				</div> /.row -->
+			</div> <!-- /.container -->	
+		</div> <!-- /.wrapper-in -->
+		<footer>
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 col-sm-12">						
+						<p>Copyright@2017</p>					
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->	
+		</footer>
+	</div> <!-- /.wrapper -->
+
+
+	
+
+ 	<!-- jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src = "js/bootstrap-datepicker.js"></script>
+    <!-- graph  
+	<script src="js/Chart.js"></script>
+	<script src="js/Chart.bundle.js"></script>
+	<script src="js/custom-charts.js"></script>-->   
+	<!-- scrollbar -->
+	<script src="js/perfect-scrollbar.js"></script>
+	<!-- caleder 
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>-->
+    <!-- datatable -->
+    <!-- <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/scroller/1.4.3/js/dataTables.scroller.min.js"></script> -->
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+
+	<script type="text/javascript">
+		/*$(document).ready(function() {
+		    $('#example').DataTable( {
+		        serverSide: true,
+		        ordering: true,
+		        searching: false,
+		        ajax: function ( data, callback, settings ) {
+		            var out = [];
+		 
+		            for ( var i=data.start, ien=data.start+data.length ; i<ien ; i++ ) {
+		                out.push( [ i+'-1', i+'-2', i+'-3', i+'-4', i+'-5', i+'-6', i+'-7', i+'-8', i+'-9' ] );
+		            }
+		 
+		            setTimeout( function () {
+		                callback( {
+		                   /* draw: data.draw,
+		                    data: out,
+		                    recordsTotal: 5000000,
+		                    recordsFiltered: 5000000
+		                } );
+		            }, 50 );
+		        },
+		        scrollY: 500,
+		        scroller: {
+		            loadingIndicator: true
+		        }
+		    });
+		});        	*/
+		/*var ps = new PerfectScrollbar('#container');
+		var ps1 = new PerfectScrollbar('#container1');
+		var ps2 = new PerfectScrollbar('#container2');
+
+		$("#startDate").datepicker({
+			//format:"dd/mm/yyyy"
+		});
+		var calendar = $("#calendar").calendar(
+                {
+                    //tmpl_path: "/tmpls/",
+                    events_source: function () { return []; }
+                });  */ 
+	</script>
+</body>
+</html>

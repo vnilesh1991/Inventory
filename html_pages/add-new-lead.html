@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+	<title>DRACORE</title>
+	<link href="css/font-awesome.css" rel="stylesheet">
+	<!-- Bootstrap Core CSS -->
+    <!-- Material design -->
+     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
+   <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.indigo-pink.min.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Material design -->
+    <link href="css/perfect-scrollbar.css" rel="stylesheet">    
+    <link href = "css/calendar.css" rel = "stylesheet">  
+    <link href = "css/datepicker.css" rel = "stylesheet">  
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/lms.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="wrapper-in">
+			<header>
+				<div class="header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 clearfix">
+								<div class="logo pull-left">
+									<a href="javascript:void(0)"></a>
+								</div> <!-- /.logo -->
+								<div class="user-info pull-right">
+									<div class = "dropdown">   
+									   	<button type = "button" class = "btn dropdown-toggle" id = "dropdownMenu1" data-toggle = "dropdown">
+									   	  <span class="user-name">
+									   	  	Welcome to Admin
+									   	  </span> <!-- /.user-name -->
+									      <span class="user-img">
+									      	<img src="" alt="">
+									      </span> <!-- /.user-img -->
+									      <span class = "caret"></span>
+									   	</button>
+									   
+									   	<ul class = "dropdown-menu" role = "menu" aria-labelledby = "dropdownMenu1">
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Java</a>
+									      	</li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Data Mining</a>
+									      	</li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">
+									            	Data Communication/Networking
+									         	</a>
+									      	</li>
+									      
+									      	<li role = "presentation" class = "divider"></li>
+									      
+									      	<li role = "presentation">
+									         	<a role = "menuitem" tabindex = "-1" href = "#">Separated link</a>
+									      	</li>
+									   </ul>
+									</div> <!-- /.dropdown -->      
+								</div> <!-- /.user-info -->
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.header-top -->			
+				<div class="nav-menu">
+					<div class="container">
+						<div class="row"> <!-- row -->
+							<div class=""> <!-- col-md-12 col-sm-12 -->
+								<nav class = "navbar navbar-default" role = "navigation">   
+								   	<div class = "navbar-header">
+								      <button type = "button" class = "navbar-toggle" 
+								         data-toggle = "collapse" data-target = "#example-navbar-collapse">
+								         <span class = "sr-only">Toggle navigation</span>
+								         <span class = "icon-bar"></span>
+								         <span class = "icon-bar"></span>
+								         <span class = "icon-bar"></span>
+								      </button>
+								   	</div>							   
+								   	<div class = "collapse navbar-collapse" id = "example-navbar-collapse">
+									
+								      <ul class = "nav navbar-nav">
+								         <li><a href = "dashboard.html">Dashboard</a></li>
+								         <li class = "active"><a href = "leads.html">Leads</a></li>
+								         <li><a href = "manager.html">Manager</a></li>
+								         <li><a href = "sales.html">Sales Channel</a></li>
+								         <li><a href = "advisers.html">Advisers</a></li>
+								         <li><a href = "rules-lead-assign.html">Rules</a></li>
+								         <li><a href = "reports.html">Reports</a></li>
+								      </ul>
+									</div>								   
+								</nav>
+							</div> <!-- /.col-md-12 -->
+						</div> <!-- /.row -->
+					</div> <!-- /.container -->
+				</div> <!-- /.nav-menu -->
+			</header>
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 col-sm-12 clearfix">
+						<div class="top-panel clearfix">
+							<h1 class="pull-left">Add New Lead</h1>
+							<div class="back-link pull-right">
+								<a href="leads.html">Back</a>
+							</div> <!-- /.back-link -->
+						</div> <!-- /.top-panel -->
+						<div class="lead-container p30">
+							<!-- <h6>Personal Details</h6> -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="idno" name="idno">
+			                           <label class="mdl-textfield__label" for="idno">ID No.</label>
+			                        </div>	            		
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="firstName" name="firstName">
+			                           <label class="mdl-textfield__label" for="firstName">First Name</label>
+			                        </div>									
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="lastName" name="lastName">
+			                           <label class="mdl-textfield__label" for="lastName">Last Name</label>
+			                        </div>	            											
+								</div> <!-- /.col-md-4 -->
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label input_fields_container_cell">
+				                           <input class="mdl-textfield__input width90" type="text" id="" name="cell1[]">
+				                           <label class="mdl-textfield__label" for="cell1">Cell 1</label>
+				                           <span class="add-icon add_more_button_cell"><i class="fa fa-plus " aria-hidden="true"></i></span>
+			                        </div>	            		
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4 ">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label input_fields_container_work">
+			                           	<input class="mdl-textfield__input width90" type="text" id="" name="work1[]">
+			                           	<label class="mdl-textfield__label" for="work1">Work 1</label>
+				                        <span class="add-icon add_more_button_work"><i class="fa fa-plus " aria-hidden="true"></i></span>
+			                        </div>									
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label input_fields_container_home">
+			                           <input class="mdl-textfield__input width90" type="text" id="home1" name="home1[]">
+			                           <label class="mdl-textfield__label" for="home1">Home 1</label>
+			                           <span class="add-icon add_more_button_home"><i class="fa fa-plus " aria-hidden="true"></i></span>
+			                        </div>	            											
+								</div> <!-- /.col-md-4 -->
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="properyUnitNumber" name="properyUnitNumber">
+			                           <label class="mdl-textfield__label" for="properyUnitNumber">Property Unit Number</label>
+			                        </div>	            											
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="propertyName" name="propertyName">
+			                           <label class="mdl-textfield__label" for="propertyName">Property Name</label>
+			                        </div>	            		
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="streetNumber" name="streetNumber">
+			                           <label class="mdl-textfield__label" for="streetNumber">Street Number</label>
+			                        </div>									
+								</div> <!-- /.col-md-4 -->
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="streetName" name="streetName">
+			                           <label class="mdl-textfield__label" for="streetName">Street Name</label>
+			                        </div>									
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="streetType" name="streetType">
+			                           <label class="mdl-textfield__label" for="streetType">Street Type</label>
+			                        </div>	            											
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="suburb" name="suburb">
+			                           <label class="mdl-textfield__label" for="suburb">Suburb</label>
+			                        </div>	            		
+								</div> <!-- /.col-md-4 -->
+							</div> <!-- /.row -->
+							<div class="row clearfix">								
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="town" name="town">
+			                           <label class="mdl-textfield__label" for="town">Town</label>
+			                        </div>	            											
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="province" name="province">
+			                           <label class="mdl-textfield__label" for="province">Province</label>
+			                        </div>	            		
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="erf" name="erf">
+			                           <label class="mdl-textfield__label" for="erf">ERF</label>
+			                        </div>									
+								</div> <!-- /.col-md-4 -->
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="TitleDeedNoNew" name="TitleDeedNoNew">
+			                           <label class="mdl-textfield__label" for="TitleDeedNoNew">TitleDeedNoNEW</label>
+			                        </div>	            											
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="portion" name="portion">
+			                           <label class="mdl-textfield__label" for="portion">PORTION</label>
+			                        </div>									
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="dateRegister" name="dateRegister">
+			                           <label class="mdl-textfield__label" for="dateRegister">Date Register</label>
+			                        </div>									
+								</div> <!-- /.col-md-4 -->
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="purchaseAmount" name="purchaseAmount">
+			                           <label class="mdl-textfield__label" for="purchaseAmount">Purchase Amount</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">	
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="extent" name="extent">
+			                           <label class="mdl-textfield__label" for="extent">Extent</label>
+			                        </div>													
+								</div>  <!-- /.col-md-4 -->	
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="bulkBondAmount" name="bulkBondAmount">
+			                           <label class="mdl-textfield__label" for="bulkBondAmount">Bulk Bond Amount</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->							
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="bondHolder" name="bondHolder">
+			                           <label class="mdl-textfield__label" for="bondHolder">Bondholder</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">	
+									<div class="custom-select catagory-dropdown lead-dropdown">
+		                              	<select name="" class="turnintodropdown">
+			                                <option value="">Property Type</option>
+			                                <option value="">1</option>
+			                                <option value="">2</option>
+			                                <option value=""></option>
+		                              	</select>
+			                        </div> <!-- /.custom-select -->									
+								</div>  <!-- /.col-md-4 -->	
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="tags" name="tags">
+			                           <label class="mdl-textfield__label" for="tags">Tags</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->							
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="leadProvider" name="leadProvider">
+			                           <label class="mdl-textfield__label" for="leadProvider">Lead Provider</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">	
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="estimatedMonthlyIncome" name="estimatedMonthlyIncome">
+			                           <label class="mdl-textfield__label" for="estimatedMonthlyIncome">Estimated Monthly Income</label>
+			                        </div>													
+								</div>  <!-- /.col-md-4 -->	
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="employer" name="employer">
+			                           <label class="mdl-textfield__label" for="employer">Employer</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->							
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="occupation" name="occupation">
+			                           <label class="mdl-textfield__label" for="occupation">Occupation</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4">	
+									<div class="custom-select catagory-dropdown lead-dropdown">
+		                              	<select name="" class="turnintodropdown">
+			                                <option value="">Matital Status</option>
+			                                <option value="">Married</option>
+			                                <option value="">Unmarried</option>
+			                                <option value="">Divorsed</option>
+		                              	</select>
+			                        </div> <!-- /.custom-select -->					
+								</div>  <!-- /.col-md-4 -->	
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="deceased" name="deceased">
+			                           <label class="mdl-textfield__label" for="deceased">Deceased</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->							
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="deceased" name="deceased">
+			                           <label class="mdl-textfield__label" for="deceased">Date of Birth</label>
+			                        </div>
+								</div> <!-- /.col-sm-4 -->
+								<div class="col-md-4 col-sm-4">
+									<div class="custom-select catagory-dropdown lead-dropdown">
+		                              	<select name="" class="turnintodropdown">
+			                                <option value="">Number of children</option>
+			                                <option value="">1</option>
+			                                <option value="">2</option>
+			                                <option value=""></option>
+		                              	</select>
+			                        </div> <!-- /.custom-select -->									
+								</div> <!-- /.col-sm-4 -->
+								<div class="col-md-4 col-sm-4">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="spouseName" name="spouseName">
+			                           <label class="mdl-textfield__label" for="spouseName">Spouse Name</label>
+			                        </div>									
+								</div> <!-- /.col-sm-4 -->
+							</div> <!-- /.row -->
+							<div class="row clearfix">
+								<div class="col-md-4 col-sm-4 mt15">
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="lifeStageEvent" name="lifeStageEvent">
+			                           <label class="mdl-textfield__label" for="lifeStageEvent">Life Stage Event</label>
+			                        </div>															
+								</div> <!-- /.col-md-4 -->
+								<div class="col-md-4 col-sm-4 mt15">	
+									<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+			                           <input class="mdl-textfield__input" type="text" id="child1Age" name="child1Age">
+			                           <label class="mdl-textfield__label" for="child1Age">Child 1 Age</label>
+			                        </div>													
+								</div>  <!-- /.col-md-4 -->	
+								<div class="col-md-4 col-sm-4">
+				            		<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+				            			<label>Upload Profile Photo</label>
+				            			<input type="file" class="filestyle width90 " data-icon="false" data-buttonText="Browse" data-placeholder="Upload Photo">
+			                        </div>	            		
+								</div> <!-- /.col-md-4 -->						
+							</div> <!-- /.row -->
+							<div class="row clearfix mt50 mb20">
+								<div class="col-md-12 col-sm-12 text-center">
+									<button type="button" class="btn btn-primary mr15">Cancel</button>
+									<button type="button" class="btn btn-primary">Submit</button>
+								</div> <!-- /.col-md-12 -->
+							</div> <!-- /.row -->
+						</div> <!-- /.lead-container -->
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->				
+				<!-- <div class="row clearfix">
+					<div class="col-md-12 col-sm-12">
+						<div class="lead-indicator">
+					
+						</div>  /.lead-indicator 
+					</div>
+				</div> /.row -->
+			</div> <!-- /.container -->	
+		</div> <!-- /.wrapper-in -->
+		<footer>
+			<div class="container">
+				<div class="row clearfix">
+					<div class="col-md-12 col-sm-12">						
+						<p>Copyright@2017</p>					
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->	
+		</footer>
+	</div> <!-- /.wrapper -->
+
+
+
+
+
+								
+
+	
+
+ 	<!-- jQuery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src = "js/bootstrap-datepicker.js"></script>
+    <!-- graph  
+	<script src="js/Chart.js"></script>
+	<script src="js/Chart.bundle.js"></script>
+	<script src="js/custom-charts.js"></script>-->   
+	<!-- scrollbar 
+	<script src="js/perfect-scrollbar.js"></script>-->
+	<!-- caleder 
+	<script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>-->
+    <!-- filestyle -->
+    <script type="text/javascript" src="js/bootstrap-filestyle.js"></script>
+	<script type="text/javascript">
+		$(":file").filestyle({icon: false,buttonText: "Browse",placeholder:"Upload Photo"});
+		$(document).ready(function(){
+			var max_fields_limit = 10; //set limit for maximum input fields
+    		var x = 1; //initialize counter for text box
+	    		$('.add_more_button_cell').click(function(e){ //click event on add more fields button having class add_more_button
+	        	e.preventDefault();
+		        if(x < max_fields_limit){ //check conditions
+		            x++; //counter increment
+		            $('.input_fields_container_cell').append('<div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width90"><input class="mdl-textfield__input" type="text" id="" name="cell1[]"><label class="mdl-textfield__label" for="cell1"></label></div><a href="#" class="remove_field_cell"><i class="fa fa-minus " aria-hidden="true"></i></a></div></div>'); //add input field
+		        }
+    		});  
+		    $('.input_fields_container_cell').on("click",".remove_field_cell", function(e){ //user click on remove text links
+		        e.preventDefault(); $(this).parent('div').remove(); x--;
+		    });
+		    /******************** for work 1 ******************************/ 
+			var max_fields_limit = 10; //set limit for maximum input fields
+    		var x = 1; //initialize counter for text box
+	    		$('.add_more_button_work').click(function(e){ //click event on add more fields button having class add_more_button
+	        	e.preventDefault();
+		        if(x < max_fields_limit){ //check conditions
+		            x++; //counter increment
+		            $('.input_fields_container_work').append('<div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width90"><input class="mdl-textfield__input" type="text" id="" name="work1[]"><label class="mdl-textfield__label" for="work1"></label></div><a href="#" class="remove_field_work"><i class="fa fa-minus " aria-hidden="true"></i></a></div></div>'); //add input field
+		        }
+    		});
+		    $('.input_fields_container_work').on("click",".remove_field_work", function(e){ //user click on remove text links
+		        e.preventDefault(); $(this).parent('div').remove(); x--;
+		    })
+		     /************************ for home 1 *****************************/ 
+			var max_fields_limit = 10; //set limit for maximum input fields
+    		var x = 1; //initialize counter for text box
+	    		$('.add_more_button_home').click(function(e){ //click event on add more fields button having class add_more_button
+	        	e.preventDefault();
+		        if(x < max_fields_limit){ //check conditions
+		            x++; //counter increment
+		            $('.input_fields_container_home').append('<div><div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label width90"><input class="mdl-textfield__input" type="text" id="" name="home1[]"><label class="mdl-textfield__label" for="home1"></label></div><a href="#" class="remove_field_home"><i class="fa fa-minus " aria-hidden="true"></i></a></div></div>'); //add input field
+		        }
+    		});  
+		    $('.input_fields_container_home').on("click",".remove_field_home", function(e){ //user click on remove text links
+		        e.preventDefault(); $(this).parent('div').remove(); x--;
+		    })
+		})
+	</script>
+</body>
+</html>

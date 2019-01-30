@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Car Inventory</title>
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+    <body ng-app="invent">
+        <div ng-view style="height: 100%;" autoscroll="true"></div>
+        <script src="js/jquery.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+        <script src="js/bootstrap.min.js"></script>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>-->
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="app.js"></script>
+        <script src="config/routes.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script src="js/additional-method.js"></script>	
+        <script src="js/dataTables.js"></script>
+        <!--************ Controllers **************-->
+        <script src="controllers/homeController.js"></script>
+        <script src="controllers/modelController.js"></script>
+        <script src="controllers/displayController.js"></script>
+        
+        <!--************ Services **************--> 
+        <script src="services/homeService.js"></script>
+        <script src="services/modelService.js"></script>
+        <script src="services/displayService.js"></script>
+
+    </body>
+</html>
